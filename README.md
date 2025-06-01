@@ -2,7 +2,7 @@
 
 A browser extension that adds a floating overlay to ChatGPT conversations, allowing you to quickly navigate through your questions and responses.
 
-![GPTNav Demo](screenshot.png)
+![GPTNav Demo]
 
 ## Features
 
@@ -30,14 +30,6 @@ A browser extension that adds a floating overlay to ChatGPT conversations, allow
 4. Click "Load unpacked" and select the `chrome/` folder
 5. The extension should now appear in your extensions list
 
-#### Firefox
-1. Download or clone this repository
-2. Open Firefox and go to `about:debugging`
-3. Click "This Firefox" in the sidebar
-4. Click "Load Temporary Add-on"
-5. Select the `firefox/manifest.json` file
-6. The extension should now appear in your extensions list
-
 ## Usage
 
 1. Navigate to [ChatGPT](https://chat.openai.com)
@@ -56,19 +48,9 @@ A browser extension that adds a floating overlay to ChatGPT conversations, allow
 
 ```
 GPTNav/
-├── chrome/                 # Chrome extension files
 │   ├── manifest.json
 │   ├── content.js
-│   ├── popup.html
-│   ├── popup.js
 │   ├── background.js
-│   └── icons/
-├── firefox/               # Firefox extension files
-│   ├── manifest.json
-│   ├── content.js
-│   ├── popup.html
-│   ├── popup.js
-│   └── icons/
 └── README.md
 ```
 
@@ -80,11 +62,6 @@ The Chrome version uses Manifest V3 and includes:
 - Background service worker for keyboard commands
 - Popup interface for manual control
 
-### Building for Firefox
-The Firefox version uses Manifest V2 and includes:
-- Content scripts for ChatGPT pages
-- Browser action popup
-- Command API for keyboard shortcuts
 
 ### Testing
 1. Load the extension in developer mode
@@ -101,12 +78,6 @@ This extension:
 - ✅ Works entirely locally in your browser
 - ✅ Does not require account creation or external services
 
-## Browser Compatibility
-
-- ✅ Chrome 88+
-- ✅ Firefox 78+
-- ✅ Edge 88+
-- ✅ Opera 74+
 
 ## Contributing
 
@@ -115,10 +86,6 @@ This extension:
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Changelog
 
